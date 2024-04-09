@@ -7,7 +7,7 @@
 body{
   background-color: rgb(222 , 215, 210);
 }
-/* header section */
+/* headers section */
 .main-contain{
     display: flex;
     justify-content: space-between;
