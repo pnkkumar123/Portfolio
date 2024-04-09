@@ -45,4 +45,4 @@ route.get("/details",(req,res)=>{
         return res.status(500).json({message:error})
     })
 })
-export default route
+module.exports =  route

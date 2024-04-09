@@ -42,4 +42,4 @@ routes.post("/signin",async(req,res,next)=>{
         nextImageLoaderRegex(error)
     }
 })
-export default routes
+module.exports = routes;
