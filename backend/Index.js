@@ -7,7 +7,7 @@ const routes =  require ('./api/routes/Auth.js');
 const path = require('path')
 
 
-dotenv.config();
+require('dotenv').config();
 
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{
