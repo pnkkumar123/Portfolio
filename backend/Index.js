@@ -9,7 +9,7 @@ const path = require('path');
 dotenv.config();
 const envFilePath = path.resolve(__dirname, '.env');
 
-// Load environment variables from the custom .env file
+// Load environment variables from the custom .env files
 dotenv.config({ path: envFilePath });
  
 
