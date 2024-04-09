@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color: rgb(222 , 215, 210);
+}
+/* header section */
+.main-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(222, 215, 210);
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  box-shadow: 0 0 10px rgba(25, 26, 26, 0.81);
+}
+hr{
+  width: 80%; /* Set the desired width, you can use percentage or other units */
+      margin: 20px auto; /* Optional: Center the hr element */
+      border: 1px solid #ccc;
+}
+.title{
+  margin: 0;
+}
+.title:hover{
+  color: rgb(98, 101, 104);
+}
+.navlinks{
+  display: flex;
+  gap: 20px;
+  margin-right: 40px;
+}
+.navlinks a{
+  text-decoration: none;
+  color: #fff;
+}
+.navlinks a:hover{
+  text-decoration: underline;
+}
+/* footer section */
