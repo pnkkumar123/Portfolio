@@ -1,7 +1,7 @@
-import express from 'express'
-import Admin from '../models/Admin.js';
-import bcryptjs from 'bcryptjs';
-import jwt from 'jsonwebtoken'
+const express = require ('express');
+const Admin = require ('../models/Admin.js') ;
+const bcryptjs = require ('bcryptjs');
+const jwt = require ('jsonwebtoken')
 const routes = express.Router()
 
 routes.post("/signup",async(req,res)=>{

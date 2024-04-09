@@ -32,7 +32,7 @@ const Admin = () => {
         try {
             setLoading(true);
             setError(false);
-            const response = await fetch("http://localhost:8000/project/create", {
+            const response = await fetch("/project/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

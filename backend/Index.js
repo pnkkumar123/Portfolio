@@ -1,9 +1,11 @@
-import express from 'express'
-import mongoose from 'mongoose'
-import dotenv from 'dotenv'
-import cors from 'cors'
-import route from './api/routes/Route.js';
-import routes from './api/routes/Auth.js';
+const express = require('express');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const cors = require('cors');
+const route = require('./api/routes/Route.js') ;
+const routes =  require ('./api/routes/Auth.js');
+const path = require('path')
+
 
 dotenv.config();
 
@@ -22,3 +24,22 @@ app.listen("8000",()=>{
 })
 app.use("/project",route)
 app.use("/admin",routes)
+
+// deplpyment
+
+const __dirname1 = path.resolve();
+
+if("production" === "production"){
+    app.use(express.static(path.join(__dirname1,"/Portfolio_website")));
+     
+    app.get("*",(req,res)=>
+     res.sendFile(path.resolve(__dirname1,"Portfolio_website","dist","index.html"))
+   
+  
+)
+
+}else{
+    app.get("/",(req,res)=>{
+        res.send("api is running..")
+    })
+}

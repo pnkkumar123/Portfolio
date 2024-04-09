@@ -18,7 +18,7 @@ function SignUp() {
         try{
             setLoading(true)
             setError(false)
-          const data = await fetch("http://localhost:8000/admin/signin",{
+          const data = await fetch("/admin/signin",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
